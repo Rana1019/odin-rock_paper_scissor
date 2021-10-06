@@ -168,12 +168,12 @@ function handleResult(number)
     if(maxScore == 0)
     {
         heading.textContent = "First to 5 wins";
+
     }
     else if(maxScore == 5)
     {
         heading.textContent = `${(playSco > compSco)? "Player won the game" : "Computer won the game"}`;
-        playSco = 0;
-        compSco = 0;
+        
        if(playSco > compSco)
        {
            document.querySelector(".topHeading").style.boxShadow = "0 0 10px green";
@@ -185,7 +185,8 @@ function handleResult(number)
         document.querySelector(".topHeading").style.border = "2px red solid";
        }
         
-
+       playSco = 0;
+       compSco = 0;
 
     }
     else if(maxScore > 0 && maxScore < 5)
