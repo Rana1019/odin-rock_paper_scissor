@@ -179,7 +179,7 @@ function handleResult(number)
            document.querySelector(".topHeading").style.boxShadow = "0 0 10px green";
            document.querySelector(".topHeading").style.border = "2px green solid";
        }
-       else
+       else if(compSco > playSco)
        {
         document.querySelector(".topHeading").style.boxShadow = "0 0 10px red";
         document.querySelector(".topHeading").style.border = "2px red solid";
